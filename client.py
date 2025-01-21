@@ -7,7 +7,7 @@ import time
 # Configuration
 SERVER_IP = '192.168.208.50'  # Replace with your server's IP
 PORT = 5000
-CHUNK = 512  # Audio chunk size
+CHUNK = 18432  # Audio chunk size
 FORMAT = pyaudio.paInt16  # Audio format
 CHANNELS = 1  # Number of audio channels (stereo)
 RATE = 44100  # Sample rate (Hz)
