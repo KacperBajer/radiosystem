@@ -5,11 +5,11 @@ import struct
 import time
 
 # Configuration
-SERVER_IP = '192.168.50.179'  # Replace with your server's IP
+SERVER_IP = '192.168.208.50'  # Replace with your server's IP
 PORT = 5000
-CHUNK = 1024  # Audio chunk size
+CHUNK = 512  # Audio chunk size
 FORMAT = pyaudio.paInt16  # Audio format
-CHANNELS = 2  # Number of audio channels (stereo)
+CHANNELS = 1  # Number of audio channels (stereo)
 RATE = 44100  # Sample rate (Hz)
 
 # Initialize PyAudio

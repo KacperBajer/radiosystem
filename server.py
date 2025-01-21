@@ -8,9 +8,9 @@ import struct
 # Configuration
 HOST = '0.0.0.0'
 PORT = 5000
-CHUNK = 1024  # Size of each audio chunk
+CHUNK = 18432  # Size of each audio chunk
 FORMAT = 'int16'  # Audio format compatible with sounddevice
-CHANNELS = 2  # Number of audio channels (stereo)
+CHANNELS = 1  # Number of audio channels
 RATE = 44100  # Sample rate (Hz)
 DELAY = 0.5  # 500ms delay for synchronization
 
