@@ -8,7 +8,7 @@ const PORT = 3000;
 let pythonProcess = null;
 
 // Start the audio streaming client
-app.post('/start-audio', (req, res) => {
+app.get('/start-audio', (req, res) => {
     if (pythonProcess) {
         return res.status(400).send('Audio streaming client is already running.');
     }
@@ -32,7 +32,7 @@ app.post('/start-audio', (req, res) => {
 });
 
 // Stop the audio streaming client
-app.post('/stop-audio', (req, res) => {
+app.get('/stop-audio', (req, res) => {
     if (!pythonProcess) {
         return res.status(400).send('Audio streaming client is not running.');
     }
